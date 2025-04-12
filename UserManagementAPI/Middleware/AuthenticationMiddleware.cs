@@ -7,9 +7,7 @@ public class AuthenticationMiddleware(RequestDelegate next, ILogger<Authenticati
 
 	public async Task InvokeAsync(HttpContext httpContext)
 	{
-		// Log the Authorization header for debugging
 		var authorizationHeader = httpContext.Request.Headers.Authorization.FirstOrDefault();
-		_logger.LogInformation("Authorization Header: {AuthorizationHeader}", authorizationHeader);
 
 		var token = authorizationHeader?.Split(" ").Last();
 
