@@ -8,7 +8,7 @@ The **User Management API** is a RESTful API built with ASP.NET Core, designed t
   - **AuthenticationMiddleware**: Validates JWT tokens for secure access.
   - **ErrorHandlingMiddleware**: Handles exceptions and returns standardized error responses.
   - **LoggingMiddleware**: Logs incoming requests and outgoing responses.
-- **Swagger Integration**: Automatically generated API documentation and testing interface.
+- **Scalar Integration**: Automatically generated API documentation and testing interface.
 - **Dependency Injection**: Services like `UserService` are injected for modular and testable code.
 
 #### Endpoints:
@@ -29,8 +29,7 @@ The **User Management API** is a RESTful API built with ASP.NET Core, designed t
 
 #### Technologies Used:
 - **ASP.NET Core 9.0**
-- **Swashbuckle** for Swagger documentation
-- **System.IdentityModel.Tokens.Jwt** for token handling
+- **Scalar** for API documentation
 
 #### Example User Model:
 ```json
@@ -47,9 +46,4 @@ The **User Management API** is a RESTful API built with ASP.NET Core, designed t
 1. Clone the repository.
 2. Build the solution using Visual Studio or the .NET CLI.
 3. Run the application. The API will be available at `http://localhost:5090` or `https://localhost:7153`.
-4. Access the Swagger UI at `/swagger` for testing and documentation.
-
-#### Future Enhancements:
-- Add database integration for persistent storage.
-- Implement advanced token validation in `AuthenticationMiddleware`.
-- Add unit and integration tests.
+4. Access the Scalar UI at `/scalar/v1` for testing and documentation.
